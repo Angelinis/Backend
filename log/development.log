@@ -511,3 +511,23 @@ Completed 200 OK in 20ms (Views: 9.1ms | ActiveRecord: 3.9ms | Allocations: 9678
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
   [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("title", "content", "archived", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "This is a romantic note"], ["content", "Some romantic information"], ["archived", false], ["user_id", 3], ["created_at", "2023-08-22 06:06:11.381859"], ["updated_at", "2023-08-22 06:06:11.381859"]]
   [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2023-08-22 17:51:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 134.7ms | Allocations: 35391)
+Completed 200 OK in 172ms (Views: 145.7ms | ActiveRecord: 0.0ms | Allocations: 39541)
+
+
+Started GET "/routes" for 127.0.0.1 at 2023-08-22 17:51:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+Started GET "/routes" for 127.0.0.1 at 2023-08-22 17:52:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
