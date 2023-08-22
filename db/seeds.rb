@@ -5,7 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-user_test = User.create(username: "defaultuser")
+
+Note.delete_all
+User.delete_all
+
+user_test = User.create(username: "RandomUser")
 
 note_test = Note.create(title: "Some old note", user: user_test, content: "some important information",
                         archived: true)
