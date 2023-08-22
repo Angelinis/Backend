@@ -28,8 +28,7 @@ class NotesController < ApplicationController
 
   def destroy
     @note.destroy
-    notes = Note.all
-    render json: notes, notice: "Note successfully destroyed", status: :see_other
+    head :no_content 
   end
 
   private
