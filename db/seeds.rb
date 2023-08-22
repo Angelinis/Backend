@@ -8,4 +8,11 @@
 user_test = User.create(username: "defaultuser")
 
 note_test = Note.create(title: "Some old note", user: user_test, content: "some important information",
-                        archived: false)
+                        archived: true)
+                 
+note_test2 = Note.create(title: "Some new note", user: user_test, content: "This information is related to work",
+archived: false)
+
+note_test3 = Note.create(title: "This is a romantic note", user: user_test, content: "Some romantic information",
+archived: false)
+
