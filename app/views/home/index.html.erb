@@ -1,2 +1,35 @@
-<h1>Home#index</h1>
-<p>Test page</p>
+<h1 style="text-align:center;">Note - Backend API </h1>
+<p style="text-align:justify;">This is an API for getting, editing, erasing and posting information about notes. 
+The API works through the methods: GET, POST, PATCH, PUT AND DELETE.<br/><br/>
+ To work with the backend api, the user needs to add the endpoint to the BASEURI - example: "BASEURI/notes".
+<br/><br/>The BASEURI can change depending on the user. If the user runs the backend locally, it will depend on the port - example: "localhost:3000". 
+Or the BASEURI can also be a service web if the backend was deployed on a server. There is a deployed API with BASEURI: 
+<span style="color: green;"> "https://backend-e9fx.onrender.com/" </span>: </p>
+<ul>
+<li> notes_path </li>
+
+
+<ol>
+<li>GET /notes(.:format) notes#index</li>
+<li>POST /notes(.:format) notes#create</li>
+</ol>
+
+<br/><br/>
+<li> note_path </li>
+
+
+<ol>
+<li>GET /notes/:id(.:format) notes#show</li>
+<li>PATCH /notes/:id(.:format) notes#update</li>
+<li>PUT /notes/:id(.:format) notes#update</li>
+<li>DELETE /notes/:id(.:format) notes#destroy</li>
+</ol>
+
+<br/><br/>
+<li> users_path </li>
+
+
+<ol>
+<li>GET /users(.:format) users#index </li>
+</ol>
+</ul>

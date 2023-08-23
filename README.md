@@ -13,7 +13,7 @@ It is a project based on Ruby on Rails language and it used the concepts of APIs
 
 ## Ruby version
 
-This webpage was coded using Ruby version 3.1.2
+This webpage was coded using Ruby version 3.1.2 and postgresql.
 
 ## Getting Started
 
@@ -35,25 +35,31 @@ Finally start the rails database and server using:
 
 [postgresql]: https://www.postgresql.org/download/
 
+> > There is an easier command. After cloning the repo, you can run the script:
+
+     ./start_app.sh
+
+Choose the best command for you!
+
 ## Routes
 
 The backend api works with the next routes:
 
 notes_path
 
-GET /notes(.:format) notes#index
-POST /notes(.:format) notes#create
+- GET /notes(.:format) notes#index
+- POST /notes(.:format) notes#create
 
 note_path
 
-GET /notes/:id(.:format) notes#show
-PATCH /notes/:id(.:format) notes#update
-PUT /notes/:id(.:format) notes#update
-DELETE /notes/:id(.:format) notes#destroy
+- GET /notes/:id(.:format) notes#show
+- PATCH /notes/:id(.:format) notes#update
+- PUT /notes/:id(.:format) notes#update
+- DELETE /notes/:id(.:format) notes#destroy
 
 users_path
 
-GET /users(.:format) users#index
+- GET /users(.:format) users#index
 
 ## Extra Gems
 
