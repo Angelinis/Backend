@@ -41,6 +41,13 @@ Finally start the rails database and server using:
 
 Choose the best command for you!
 
+## API
+
+There is a deployed API hosted on [Render][web] through the link: [https://backend-e9fx.onrender.com/][render]. There is no need to clone the backend locally, because the frontend can run with the API. However, if you want to do any change and run the backend locally, feel free to do it.
+
+[web]: https://render.com/docs/
+[render]: https://backend-e9fx.onrender.com/
+
 ## Routes
 
 The backend api works with the next routes:
