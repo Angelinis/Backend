@@ -9150,3 +9150,25 @@ Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.7ms | Allocations: 804)
 Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.7ms | Allocations: 1640)
 
 
+Started GET "/" for 127.0.0.1 at 2023-08-23 08:39:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 40645)
+Completed 200 OK in 80ms (Views: 73.3ms | ActiveRecord: 0.0ms | Allocations: 44758)
+
+
+Started GET "/routes" for 127.0.0.1 at 2023-08-23 08:39:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+Started GET "/notes" for 127.0.0.1 at 2023-08-23 08:42:05 -0300
+Processing by NotesController#index as HTML
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/notes_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 10.5ms | ActiveRecord: 3.4ms | Allocations: 10237)
+
+

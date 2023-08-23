@@ -7,11 +7,9 @@ The notes has two tables: a table user and a table note.
 
 It is a project based on Ruby on Rails language and it used the concepts of APIs, validations, seeds, etc.
 
-![homepage](https://raw.githubusercontent.com/Angelinis/tweetable-app/main/app/assets/images/Tweetable_app_1.JPG)
+![homepage](https://github.com/Angelinis/Backend/blob/main/app/assets/images/backend_notes_1.JPG?raw=yes)
 
-![details1](https://raw.githubusercontent.com/Angelinis/tweetable-app/main/app/assets/images/Tweetable_app_2.JPG)
-
-![details2](https://raw.githubusercontent.com/Angelinis/tweetable-app/main/app/assets/images/Tweetable_app_3.JPG)
+![details1](https://github.com/Angelinis/Backend/blob/main/app/assets/images/backend_notes_2.JPG?raw=yes)
 
 ## Ruby version
 
@@ -36,6 +34,26 @@ Finally start the rails database and server using:
     rails s
 
 [postgresql]: https://www.postgresql.org/download/
+
+## Routes
+
+The backend api works with the next routes:
+
+notes_path
+
+GET /notes(.:format) notes#index
+POST /notes(.:format) notes#create
+
+note_path
+
+GET /notes/:id(.:format) notes#show
+PATCH /notes/:id(.:format) notes#update
+PUT /notes/:id(.:format) notes#update
+DELETE /notes/:id(.:format) notes#destroy
+
+users_path
+
+GET /users(.:format) users#index
 
 ## Extra Gems
 
